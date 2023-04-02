@@ -1,7 +1,5 @@
 .cart{
-    background-color: black;
-    color: white;
-    font-size: 27px;
-    border-radius: 10px;
+    display: flex;
+
     
 }

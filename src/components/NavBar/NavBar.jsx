@@ -22,12 +22,11 @@ export const NavBar = () => {
               <li class="nav-item">
                 <a class="nav-link">Salir</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link"><CartWidget/></a>
-              </li>
+
             </ul>
           </div>
         </div>
+        <CartWidget/>
       </nav>
       
 </div>
