@@ -1,0 +1,9 @@
+.navbar-collapse{
+    background-color: blueviolet;
+    font-size: 30px;
+    flex-direction: row-reverse;
+}
+.navbar-brand{
+    font-size: 50px;
+    font-weight: 700;
+}
