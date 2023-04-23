@@ -1,0 +1,9 @@
+.botones{
+    display: flex;
+    justify-content: space-around;
+
+}
+h8{
+    text-align: center;
+    font-size: 30px;
+}

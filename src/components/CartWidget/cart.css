@@ -1,5 +1,7 @@
 .cart{
-    display: flex;
-
+    color: white;
+    font-size: 30px;
+    height: 50px;
+    margin: 10px;
     
 }

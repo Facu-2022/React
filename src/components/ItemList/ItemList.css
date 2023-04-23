@@ -1,0 +1,15 @@
+img{
+    height: 250px;
+}
+.cuerpo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+h1{
+    text-align: center;
+    font-family: cursive;
+    margin: 50px;
+    align-items: center;
+}

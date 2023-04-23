@@ -1,9 +1,14 @@
-.navbar-collapse{
-    background-color: blueviolet;
-    font-size: 30px;
+.nav{
+    align-items: center;
+    background-color: black;
+}
+
+.logo1{
+    height: 170px;
+    width: 170px;
     flex-direction: row-reverse;
 }
-.navbar-brand{
-    font-size: 50px;
-    font-weight: 700;
+.nav-link{
+    color: white;
+    font-size: 20px;
 }
