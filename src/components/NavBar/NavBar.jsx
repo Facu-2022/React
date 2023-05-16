@@ -1,34 +1,34 @@
 import React from 'react'
 import './navbar.css'
+import { Link } from 'react-router-dom'
 import { CartWidget } from '../CartWidget/CartWidget'
 import Nav from 'react-bootstrap/Nav';
 import logo from '../CartWidget/imagen/lgo1.png'
 
 
+
+
 export const NavBar = () => {
 
     return (
-      <Nav>
+      <Nav className='navv'>
         <Nav.Item>
-        <Nav.Link href="/"><img src={logo} class="logo1" alt="" /></Nav.Link>
+        <Link className='link' to="/"><img src={logo} class="logo1" alt="" /></Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/">Inicio</Nav.Link>
+          <Link  className='link' to="/">Inicio</Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/contador">Contador</Nav.Link>
+        <Link  className='link' to="/Pika">Pika</Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/Pika">Pika</Nav.Link>
+        <Link  className='link' to="/carreras/carrera">Carreras</Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/carreras/carrera">Carreras</Nav.Link>
+        <Link  className='link' to="/carreras/curso">Cursos</Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link href="/carreras/curso">Cursos</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link href="/"><CartWidget/></Nav.Link>
+        <Link  className='link' to="/Cart"><CartWidget/></Link>
         </Nav.Item>
       </Nav>
     );

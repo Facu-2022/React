@@ -32,7 +32,7 @@ export const ItemDetailContainer = () => {
 
   return (
     <section>
-    
+        
         <ItemDetail{...item}/>
 
     </section>
