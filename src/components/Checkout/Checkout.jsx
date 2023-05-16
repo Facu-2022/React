@@ -48,7 +48,7 @@ export const Checkout = () => {
          Swal.fire({
              icon: 'success',
              title: 'Compra Exitosa',
-            //  text: 'so numero de orden es: ${res.Id}',
+             text: `Numero de orden: ${res.id}`,
              willClose: ()=>{
                 vaciarCarrito()
              }
@@ -56,6 +56,16 @@ export const Checkout = () => {
  
  
     })
+    carrito.forEach((item) => {
+        const docRef = db.collection('productos').doc(item.id)
+  
+        docRef.get()
+          .then((doc) => {
+            docRef.update({
+              stock: doc.data().stock - item.counter
+            })
+          })
+      })
     
    }
 

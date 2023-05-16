@@ -3,21 +3,20 @@ import './ItemCounter.css'
 
 export const ItemContador = ({max,modify,cantidad}) => {
 
-    
-    const sumar= ()=>{
-      modify(cantidad+1)
-    }
-    const restar= ()=>{
-      if(cantidad>0){
-      modify(cantidad-1)
-      }else{
-        modify(0)
 
-      }
+  const sumar = () => {
+    if (cantidad < max) {
+      modify(cantidad + 1)
     }
-    const Reset= ()=>{
-      modify(0)
+  }
+  const restar = () => {
+    if (cantidad > 0) {
+      modify(cantidad - 1)
     }
+  }
+  const Reset = () => {
+    modify(0)
+  }
 
 
 

@@ -1,7 +1,7 @@
 
 export const carreras=[
     {
-        Id: 1,
+        id: 1,
         Carrera: "LITERATURA",
         price: 3900,
         Duracion: "Tres Años",
@@ -10,7 +10,7 @@ export const carreras=[
         stock: 20
     },
     {
-        Id: 2,
+        id: 2,
         Carrera: "MEDICINA",
         price: 3900,
         Duracion: "Cinco Años",
@@ -19,7 +19,7 @@ export const carreras=[
         stock: 20
     },
     {
-        Id: 3,
+        id: 3,
         Carrera: "CIENCIAS ECONOMICAS",
         price: 3900,
         Duracion: "Cuatro Años",
@@ -28,7 +28,7 @@ export const carreras=[
         stock: 20
     },
     {
-        Id: 4,
+        id: 4,
         Carrera: "PROGRAMACIÓN",
         price: 3900,
         Duracion: "Tres Años",
@@ -37,7 +37,7 @@ export const carreras=[
         stock: 20
     },
     {
-        Id: 5,
+        id: 5,
         Carrera: "LITERATURA",
         price: 3900,
         Duracion: "Tres Años",
@@ -46,7 +46,7 @@ export const carreras=[
         stock: 20
     },
     {
-        Id: 6,
+        id: 6,
         Carrera: "MEDICINA",
         price: 3900,
         Duracion: "Cinco Años",
@@ -55,7 +55,7 @@ export const carreras=[
         stock: 20
     },
     {
-        Id: 7,
+        id: 7,
         Carrera: "CIENCIAS ECONOMICAS",
         price: 3900,
         Duracion: "Cuatro Años",
@@ -64,7 +64,7 @@ export const carreras=[
         stock: 20
     },
     {
-        Id: 8,
+        id: 8,
         Carrera: "PROGRAMACIÓN",
         price: 3900,
         Duracion: "Tres Años",

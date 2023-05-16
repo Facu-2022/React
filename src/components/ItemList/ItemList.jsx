@@ -14,7 +14,7 @@ export const ItemList = ({Productos=[]}) => {
         
     </div>
     <div class="cuerpo">
-      {Productos.map((item)=> <Item {...item} key={item.Id}/>)}
+      {Productos.map((item)=> <Item {...item} key={item.id}/>)}
     </div>
     </>
     

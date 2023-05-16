@@ -5,14 +5,14 @@ import { ItemContador } from '../contador/ItemContador';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 
 
 
 
 
-
-export const ItemDetail= ({Id,Carrera, price,Duracion, Image,category,stock,name}) => {
+export const ItemDetail= ({id,Carrera, price,Duracion, Image,category,stock,name}) => {
 
 
   const navigate= useNavigate()
@@ -21,7 +21,7 @@ export const ItemDetail= ({Id,Carrera, price,Duracion, Image,category,stock,name
     navigate(-1)
   }
 
-  const {sumarCart}= useContext (CartContext)
+  const {sumarCart}= useContext(CartContext)
 
 
 
@@ -34,7 +34,8 @@ export const ItemDetail= ({Id,Carrera, price,Duracion, Image,category,stock,name
   const sumarCarrito =()=>{
     const newItem={
       Carrera,
-      Id,
+      id,
+      name,
       price,
       Image,
       category,
@@ -44,6 +45,11 @@ export const ItemDetail= ({Id,Carrera, price,Duracion, Image,category,stock,name
     }
     console.log(newItem)
     sumarCart(newItem)
+    Swal.fire({
+      icon: 'success',
+      title: `Carrera Agregada al carrito`,
+      timer: 1000
+    })
   }
 
 

@@ -25,7 +25,7 @@ export const ItemListContainer = ({greeting}) => {
       productos.get()
       .then((res)=>{
             const newItem= res.docs.map((doc)=>{
-               return{Id: doc.Id, ...doc.data()};
+               return{id: doc.id, ...doc.data()};
              });
              setItem(newItem);
          })

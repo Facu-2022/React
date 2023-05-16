@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 
 
-export const Item = ({Id,Carrera, price,Duracion, Image,category,name}) => {
+export const Item = ({id,Carrera, price,Duracion, Image,category}) => {
   return (
     <div>
     <Card style={{ width: '18rem' }}>
@@ -14,7 +14,7 @@ export const Item = ({Id,Carrera, price,Duracion, Image,category,name}) => {
         <Card.Title>Duracion: {Duracion}</Card.Title>
         <Card.Title>Categoria: {category}</Card.Title>
         <Card.Title>Precio: ${price}</Card.Title>
-        <Link to={`/detail/${name}`}>
+        <Link to={`/detail/${id}`}>
           <Button variant="warning">Inscribirme</Button>
         </Link>
         </Card.Body>

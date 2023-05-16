@@ -28,7 +28,7 @@ export const Cart = () => {
                     <h6>{prod.Carrera}</h6>
                     <p>$ {prod.price}</p>
                     <p>cantidad: {prod.counter} </p>
-                    <Button className='btn btn-danger' onClick={() => removerItem(prod.Id)}>
+                    <Button className='btn btn-danger' onClick={() => removerItem(prod.id)}>
                       Borrar
                     </Button>
                     <hr />
