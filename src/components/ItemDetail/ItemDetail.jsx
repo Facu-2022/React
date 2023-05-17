@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import './ItemDetail.css'
 import { ItemContador } from '../contador/ItemContador';
 import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
@@ -56,7 +57,8 @@ export const ItemDetail= ({id,Carrera, price,Duracion, Image,category,stock,name
 
 
   return (
-    <Card style={{ width: '25rem' }}>
+    <div className='cuerpo2'>
+    <Card style={{ width: '20rem' }}>
       <Card.Img variant="top" src={Image} />
       <Card.Body >
         <Card.Title><b>{Carrera}</b></Card.Title>
@@ -73,5 +75,6 @@ export const ItemDetail= ({id,Carrera, price,Duracion, Image,category,stock,name
 
       </Card.Body>
     </Card>
+    </div>
   );
 }
