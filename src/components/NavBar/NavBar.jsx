@@ -19,9 +19,6 @@ export const NavBar = () => {
           <Link  className='link' to="/">Inicio</Link>
         </Nav.Item>
         <Nav.Item>
-        <Link  className='link' to="/Pika">Pika</Link>
-        </Nav.Item>
-        <Nav.Item>
         <Link  className='link' to="/carreras/carrera">Carreras</Link>
         </Nav.Item>
         <Nav.Item>
